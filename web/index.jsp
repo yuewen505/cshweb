@@ -73,9 +73,9 @@
                             <cite>订餐搜索结果页</cite>
                         </a>
                     </li >
-                    <c:if test="${username=='丛爽'||username=='杨璐'}">
+                    <c:if test="${username=='丛爽'}">
                         <li>
-                            <a _href="/javawebservlet/order-list.jsp">
+                            <a _href="/javawebservlet/orderlist-del.jsp">
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>订单删除</cite>
                             </a>

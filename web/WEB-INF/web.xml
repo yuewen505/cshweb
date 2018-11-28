@@ -83,4 +83,13 @@
         <url-pattern>/CountOrderServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteOrderListServlet</servlet-name>
+        <servlet-class>com.csh.servlet.DeleteOrderListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteOrderListServlet</servlet-name>
+        <url-pattern>/DeleteOrderListServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

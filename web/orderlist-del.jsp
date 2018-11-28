@@ -33,84 +33,115 @@
     </div>
     <div class="x-body">
       <div class="layui-row">
-        <form class="layui-form layui-col-md12 x-so">
+        <form class="layui-form layui-col-md12 x-so" action="/javawebservlet/QueryOrderByDateServlet">
           <input class="layui-input" placeholder="开始日" name="start" id="start">
           <input class="layui-input" placeholder="截止日" name="end" id="end">
-          <input type="text" name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">
-          <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+          <input class="layui-input" placeholder="姓名" name="uname" id="uname">
+          <%--<div class="layui-input-inline">--%>
+          <%--<select name="contrller">--%>
+          <%--<option>支付状态</option>--%>
+          <%--<option>已支付</option>--%>
+          <%--<option>未支付</option>--%>
+          <%--</select>--%>
+          <%--</div>--%>
+          <%--<div class="layui-input-inline">--%>
+          <%--<select name="contrller">--%>
+          <%--<option>支付方式</option>--%>
+          <%--<option>支付宝</option>--%>
+          <%--<option>微信</option>--%>
+          <%--<option>货到付款</option>--%>
+          <%--</select>--%>
+          <%--</div>--%>
+          <div class="layui-input-inline">
+            <select name="contrller" id="contrller">
+              <option value="">订餐状态</option>
+              <%--<option value="0">未订餐</option>--%>
+              <option value="1">加班已订餐</option>
+              <option value="2">加班未订餐</option>
+              <%--<option value="2">已收货</option>--%>
+              <%--<option value="3">已取消</option>--%>
+              <%--<option value="4">已完成</option>--%>
+              <%--<option value="5">已作废</option>--%>
+            </select>
+          </div>
+          <%--<input type="text" name="username" placeholder="请输入订单号" autocomplete="off" class="layui-input">--%>
+          <button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+          <%--<button class="layui-btn" lay-filter="sreach" onclick=""><i class="layui-icon">&#xe73f;</i></button>--%>
+
+          <%--<button class="layui-btn" layui-btn-normal onclick=""><i class="layui-icon"></i></button>--%>
         </form>
       </div>
       <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量恢复</button>
         <span class="x-right" style="line-height:40px">共有数据：88 条</span>
       </xblock>
-      <table class="layui-table">
-        <thead>
-          <tr>
-            <th>
-              <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
-            </th>
-            <th>ID</th>
-            <th>用户名</th>
-            <th>性别</th>
-            <th>手机</th>
-            <th>邮箱</th>
-            <th>地址</th>
-            <th>加入时间</th>
-            <th>状态</th>
-            <th>操作</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
-            </td>
-            <td>1</td>
-            <td>小明</td>
-            <td>男</td>
-            <td>13000000000</td>
-            <td>admin@mail.com</td>
-            <td>北京市 海淀区</td>
-            <td>2017-01-01 11:11:42</td>
-            <td class="td-status">
-              <span class="layui-btn layui-btn-danger layui-btn-mini">
-                                已删除
-                            </span>
-            <td class="td-manage">
-              <a title="恢复" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                <i class="layui-icon">&#xe618;</i>
-              </a>
-              <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                <i class="layui-icon">&#xe640;</i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
-            </td>
-            <td>1</td>
-            <td>小明</td>
-            <td>男</td>
-            <td>13000000000</td>
-            <td>admin@mail.com</td>
-            <td>北京市 海淀区</td>
-            <td>2017-01-01 11:11:42</td>
-            <td class="td-status">
-              <span class="layui-btn layui-btn-danger layui-btn-mini">
-                                已删除
-                            </span>
-            <td class="td-manage">
-              <a title="恢复" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                <i class="layui-icon">&#xe618;</i>
-              </a>
-              <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                <i class="layui-icon">&#xe640;</i>
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <%--<table class="layui-table">--%>
+        <%--<thead>--%>
+          <%--<tr>--%>
+            <%--<th>--%>
+              <%--<div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>--%>
+            <%--</th>--%>
+            <%--<th>ID</th>--%>
+            <%--<th>用户名</th>--%>
+            <%--<th>性别</th>--%>
+            <%--<th>手机</th>--%>
+            <%--<th>邮箱</th>--%>
+            <%--<th>地址</th>--%>
+            <%--<th>加入时间</th>--%>
+            <%--<th>状态</th>--%>
+            <%--<th>操作</th></tr>--%>
+        <%--</thead>--%>
+        <%--<tbody>--%>
+          <%--<tr>--%>
+            <%--<td>--%>
+              <%--<div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>--%>
+            <%--</td>--%>
+            <%--<td>1</td>--%>
+            <%--<td>小明</td>--%>
+            <%--<td>男</td>--%>
+            <%--<td>13000000000</td>--%>
+            <%--<td>admin@mail.com</td>--%>
+            <%--<td>北京市 海淀区</td>--%>
+            <%--<td>2017-01-01 11:11:42</td>--%>
+            <%--<td class="td-status">--%>
+              <%--<span class="layui-btn layui-btn-danger layui-btn-mini">--%>
+                                <%--已删除--%>
+                            <%--</span>--%>
+            <%--<td class="td-manage">--%>
+              <%--<a title="恢复" onclick="member_del(this,'要删除的id')" href="javascript:;">--%>
+                <%--<i class="layui-icon">&#xe618;</i>--%>
+              <%--</a>--%>
+              <%--<a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">--%>
+                <%--<i class="layui-icon">&#xe640;</i>--%>
+              <%--</a>--%>
+            <%--</td>--%>
+          <%--</tr>--%>
+          <%--<tr>--%>
+            <%--<td>--%>
+              <%--<div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>--%>
+            <%--</td>--%>
+            <%--<td>1</td>--%>
+            <%--<td>小明</td>--%>
+            <%--<td>男</td>--%>
+            <%--<td>13000000000</td>--%>
+            <%--<td>admin@mail.com</td>--%>
+            <%--<td>北京市 海淀区</td>--%>
+            <%--<td>2017-01-01 11:11:42</td>--%>
+            <%--<td class="td-status">--%>
+              <%--<span class="layui-btn layui-btn-danger layui-btn-mini">--%>
+                                <%--已删除--%>
+                            <%--</span>--%>
+            <%--<td class="td-manage">--%>
+              <%--<a title="恢复" onclick="member_del(this,'要删除的id')" href="javascript:;">--%>
+                <%--<i class="layui-icon">&#xe618;</i>--%>
+              <%--</a>--%>
+              <%--<a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">--%>
+                <%--<i class="layui-icon">&#xe640;</i>--%>
+              <%--</a>--%>
+            <%--</td>--%>
+          <%--</tr>--%>
+        <%--</tbody>--%>
+      <%--</table>--%>
       <div class="page">
         <div>
           <a class="prev" href="">&lt;&lt;</a>
