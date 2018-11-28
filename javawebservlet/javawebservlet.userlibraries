@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Java EE 6-Java EE 6">
+    <archive path="D:/javawebservlet/lib/javax.transaction.jar" />
+    <archive path="D:/javawebservlet/lib/javax.servlet.jar" />
+    <archive path="D:/javawebservlet/lib/javax.persistence.jar" />
+    <archive path="D:/javawebservlet/lib/javax.servlet.jsp.jar" />
+    <archive path="D:/javawebservlet/lib/javax.annotation.jar" />
+    <archive path="D:/javawebservlet/lib/javax.ejb.jar" />
+    <archive path="D:/javawebservlet/lib/javax.jms.jar" />
+    <archive path="D:/javawebservlet/lib/javax.servlet.jsp.jstl.jar" />
+    <archive path="D:/javawebservlet/lib/javax.resource.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/commons-beanutils-1.7.0.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/commons-collections-3.1.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/commons-lang-2.5.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/commons-logging.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/ezmorph-1.0.3.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/json-lib-2.1-jdk15.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/commons-codec-1.10.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/commons-logging-1.2.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/fluent-hc-4.5.6.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/httpclient-4.5.6.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/httpclient-cache-4.5.6.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/httpclient-win-4.5.6.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/httpcore-4.4.10.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/httpmime-4.5.6.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/jna-4.4.0.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/jna-platform-4.4.0.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/jstl.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/standard.jar" />
+    <archive path="D:/javawebservlet/web/WEB-INF/lib/fastjson-1.2.51.jar" />
+  </library>
+</eclipse-userlibraries>
+
