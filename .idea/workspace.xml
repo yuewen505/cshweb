@@ -9,13 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/../javawebservlet/web/member-list.jsp" line="44" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b850e9b-f608-4681-8d85-bab70fbb7a42" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javawebservlet/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../javawebservlet/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javawebservlet/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../javawebservlet/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javawebservlet/web/order-list.jsp" afterPath="$PROJECT_DIR$/../javawebservlet/web/order-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javawebservlet/web/orderlist-del.jsp" afterPath="$PROJECT_DIR$/../javawebservlet/web/orderlist-del.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../javawebservlet/web/member-edit.html" afterPath="$PROJECT_DIR$/../javawebservlet/web/member-edit.jsp" />
-    </list>
+    <list default="true" id="7b850e9b-f608-4681-8d85-bab70fbb7a42" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../javawebservlet/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1517,16 +1511,23 @@
       <workItem from="1542091505297" duration="5365000" />
       <workItem from="1542198036595" duration="86270000" />
       <workItem from="1543282898165" duration="1376000" />
-      <workItem from="1543389799700" duration="54000" />
+      <workItem from="1543389799700" duration="90000" />
     </task>
+    <task id="LOCAL-00001" summary="正常的">
+      <created>1543389876538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543389876538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370210000" />
+    <option name="totallyTimeSpent" value="370246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1568,6 +1569,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="正常的" />
+    <option name="LAST_COMMIT_MESSAGE" value="正常的" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2468,6 +2473,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2121">
           <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2538,6 +2544,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
