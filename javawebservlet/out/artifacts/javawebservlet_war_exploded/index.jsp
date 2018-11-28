@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--<!doctype html>--%>
 <html lang="en">
@@ -15,10 +16,9 @@
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="./lib/layui/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="./js/xadmin.js"></script>
-
-
+    <script>var username = '<%=session.getAttribute("username")%>'</script>
 </head>
-<body>
+<body onload="deleteorderlist()">
     <!-- 顶部开始 -->
     <div class="container">
         <div class="logo"><a href="/javawebservlet/index.jsp">订餐后台</a></div>
@@ -73,13 +73,14 @@
                             <cite>订餐搜索结果页</cite>
                         </a>
                     </li >
-                    <%--<li>--%>
-                        <%--<a _href="member-del.html">--%>
-                            <%--<i class="iconfont">&#xe6a7;</i>--%>
-                            <%--<cite>会员删除</cite>--%>
-                            <%----%>
-                        <%--</a>--%>
-                    <%--</li>--%>
+                    <c:if test="${username=='丛爽'||username=='杨璐'}">
+                        <li>
+                            <a _href="member-del.html">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>订单删除</cite>
+                            </a>
+                        </li>
+                    </c:if>
                     <%--<li>--%>
                         <%--<a href="javascript:;">--%>
                             <%--<i class="iconfont">&#xe70b;</i>--%>
@@ -290,6 +291,5 @@
         <div class="copyright">Copyright ©2018 csh  首页访问地址：<a href="/javawebservlet/login.jsp" target="_blank">测试之家</a></div>
     </div>
     <!-- 底部结束 -->
-
 </body>
 </html>
