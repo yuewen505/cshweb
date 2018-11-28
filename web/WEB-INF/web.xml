@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <!--设置session失效时间，单位为分钟-->
+    <session-config>
+        <session-timeout>600</session-timeout>
+    </session-config>
+
+    <servlet>
+        <servlet-name>DateServlet</servlet-name>
+        <servlet-class>com.csh.servlet.DateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DateServlet</servlet-name>
+        <url-pattern>/DateServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>QueryResultServlet</servlet-name>
+        <servlet-class>com.csh.servlet.QueryResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryResultServlet</servlet-name>
+        <url-pattern>/QueryResultServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletRequst</servlet-name>
+        <servlet-class>com.csh.servlet.ServletRequst</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRequst</servlet-name>
+        <url-pattern>/ServletRequst</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryTodayOrderUserServlet</servlet-name>
+        <servlet-class>com.csh.servlet.QueryTodayOrderUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryTodayOrderUserServlet</servlet-name>
+        <url-pattern>/QueryTodayOrderUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateStatusServlet</servlet-name>
+        <servlet-class>com.csh.servlet.UpdateStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStatusServlet</servlet-name>
+        <url-pattern>/UpdateStatusServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryOrderByDateServlet</servlet-name>
+        <servlet-class>com.csh.servlet.QueryOrderByDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryOrderByDateServlet</servlet-name>
+        <url-pattern>/QueryOrderByDateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExportExcelServlet</servlet-name>
+        <servlet-class>com.csh.servlet.ExportExcelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExportExcelServlet</servlet-name>
+        <url-pattern>/ExportExcelServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CountOrderServlet</servlet-name>
+        <servlet-class>com.csh.servlet.CountOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CountOrderServlet</servlet-name>
+        <url-pattern>/CountOrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteOrderListServlet</servlet-name>
+        <servlet-class>com.csh.servlet.DeleteOrderListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteOrderListServlet</servlet-name>
+        <url-pattern>/DeleteOrderListServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
